@@ -1,11 +1,4 @@
 <% if @user.errors.any? %>
-  <!--    <div id="error_explanation">-->
-  <!--      <h2><%#= pluralize(@user.errors.count, "error") %> prohibited this article from being saved:</h2>-->
-
-  <!--      <ul>-->
-
-  <!--      </ul>-->
-  <!--    </div>-->
   <div class="absolute w-full flex flex-col items-end p-10 transition-transform">
     <% @user.errors.each do |error| %>
     <div id="toast-warning" class="flex mb-2 items-center h-12 w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
